@@ -11,7 +11,7 @@
     <title>Latitude</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
       <a class="navbar-brand" href="#">Latitude</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -20,24 +20,58 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/comparisons.html">Comparisons</a>
+            <a class="nav-link" href="comparisons.html">Comparisons <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/data.html">Data</a>
+            <a class="nav-link" href="data.html">Data</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Plots
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="/plota.html">Plot A</a>
-              <a class="dropdown-item" href="#">Plot B</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Visualization A</a>
+              <a class="dropdown-item" href="#">fig1</a>
+              <a class="dropdown-item" href="#">fig2</a>
+              <a class="dropdown-item" href="#">fig3</a>
+              <a class="dropdown-item" href="#">fig4</a>
             </div>
           </li>
         </ul>
       </div>
     </nav>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-8'>
+          <h1>Summary: Latitude vs. X</h1> 
+          <hr>
+          <img src='../Resources/assets/images/fig1.png' alt='city latitude versus Max temperature' style='width:200px;height:200px;'>
+          <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from OpenWeatherMap API to assemple a dataset on over 500 cities.</p>
+          <br>
+          <p>After assempling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at includedL temperature, cloudiness, wind speed, and hjumidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+        </div>
+        <div class ='col-md-4'>
+          <h1>Visualizations</h1>
+          <hr>
+          <table>
+            <tr>
+              <td>
+                <img src='../Resources/assets/images/fig1.png' alt='city latitude versus Max temperature' style='width:200px;height:200px;'>
+              </td>
+              <td>              
+                <img src='../Resources/assets/images/fig2.png' alt='city latitude versus humidity' style='width:200px;height:200px;'>
+              </td>
+            </tr>
+            <tr>
+              <td>              
+                <img src='../Resources/assets/images/fig3.png' alt='city latitude verus cloudiness' style='width:200px;height:200px;'>
+              </td>
+              <td>              
+                <img src='../Resources/assets/images/fig4.png' alt='city latitude versus wind speed' style='width:200px;height:200px;'>
+              </td>
+            </tr>
+        </table>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
