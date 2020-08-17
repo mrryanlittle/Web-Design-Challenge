@@ -8,9 +8,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>Latitude</title>
+    <title>Latitude vs. Wind Speed</title>
   </head>
-<body>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-info">
       <a class="navbar-brand" href="index.html">Latitude</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,6 +25,9 @@
           <li class="nav-item">
             <a class="nav-link" href="data.html">Data</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Visualizations.html">Visualizations</a>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Plots
@@ -38,7 +41,37 @@
           </li>
         </ul>
       </div>
-    </nav>
-    <a href='../Resources/assets/images/fig4.png'><img src='../Resources/assets/images/fig4.png' alt='city latitude versus wind speed'></a>
-</body>
+    </nav>  
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-8'>
+    <h1>Wind Speed</h1>
+    <hr>   
+        <a href='../Resources/assets/images/fig4.png'><img src='../Resources/assets/images/fig4.png' alt='city latitude versus maximum temperature'></a>
+        <script src="" async defer></script>
+        <br>
+        <p>The wind speed increases as the latitude increases. There are higher wind speeds are found in degrees 40 to 80, in the northern hemisphere. No citieshave zero wind speed, but some in the 30 to 40 latitude range do come very close.</p>
+        </div>
+        <div class ='col-md-4'>
+          <h1>Visualizations</h1>
+          <hr>
+          <table>
+            <tr>
+              <td>
+                <a href='lat_temp.html'><img src='../Resources/assets/images/fig1.png' alt='city latitude versus maximium temperature' style='width:200px;height:200px;'>
+              </td>
+              <td>              
+                <a href='lat_hum.html'><img src='../Resources/assets/images/fig2.png' alt='city latitude versus humidity' style='width:200px;height:200px;'></a>
+              </td>
+            </tr>
+            <tr>
+              <td>              
+                <a href='lat_cloud.html'><img src='../Resources/assets/images/fig3.png' alt='city latitude verus cloudiness' style='width:200px;height:200px;'></a>
+              </td>
+              <td>              
+                <a href='lat_speed.html'><img src='../Resources/assets/images/fig4.png' alt='city latitude versus wind speed' style='width:200px;height:200px;'></a>
+              </td>
+            </tr>
+        </table>
+        </div>    </body>
 </html>
